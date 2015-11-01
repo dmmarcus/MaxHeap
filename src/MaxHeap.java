@@ -17,14 +17,12 @@ public class MaxHeap<T extends Comparable<T>>{
 		
 		for (int i = 0; i < arrayList.size(); ++i){
 			
-			//this.insert(arrayList.get(i));
 			array.add(arrayList.get(i));
 		}
 		
 		for (int i = arrayList.size()/2; i >= 0; --i){
 			
 			this.siftDown(i);
-			
 		}
 	}
 	
@@ -97,7 +95,6 @@ public class MaxHeap<T extends Comparable<T>>{
 	
 			key = parent;
 			parent = key/2;
-			
 		}
 	}
 	
